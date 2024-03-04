@@ -1,0 +1,88 @@
+.footer {
+  background: #000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-texto {
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.footer-lista li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-lista li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-lista li::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  align-items: center;
+}
+
+.footer-lista .mail::before {
+  background: url("../img/email.svg") no-repeat center center;
+}
+
+.footer-lista .linke::before {
+  background: url("../img/linkedin.svg") no-repeat center center;
+}
+
+.footer-lista .git::before {
+  background: url("../img/github.svg");
+}
+
+.footer-lista a:hover {
+  color: #ffea00;
+  transition: 0.2s;
+}
+
+.footer-lista a:not(:hover) {
+  color: #fff;
+  transition: .2s;
+}
+
+.footercop {
+  font-size: 1.125rem;
+  grid-column: 1 / -1;
+  color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-lista li {
+    font-size: 1.5rem;
+  }
+
+  .footer-lista li::before {
+position: initial;
+margin-bottom: 10px;
+gap: 10px;
+  }
+}
