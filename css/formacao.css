@@ -135,6 +135,23 @@
   justify-content: space-between;
 }
 
+.cv{
+  display: flex;
+  gap: 10px;
+  grid-column: 2;
+  padding: 20px 40px;
+  text-decoration: none;
+  background:linear-gradient(#FFEA00,  #ffbf00);
+  border-radius: 5px;
+  color: #333312;
+  font-weight:900;
+  width: max-content;
+}
+
+.cv:hover{
+  background: #ffbf00;
+}
+
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;

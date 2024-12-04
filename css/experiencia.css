@@ -74,13 +74,26 @@
   align-content: start;
 }
 
-.projeto-habilidades li {
+.projeto-habilidades li, .link-button {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   line-height: 1.5;
   display: block;
   background-color: #fff;
   border-radius: 4px;
+}
+
+.link-button{
+  text-decoration: none;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+}
+
+.link-button:hover{
+  transition: .2s;
+  background-color: #000;
+  color: #fff;
 }
 
 @media (max-width: 800px) {
